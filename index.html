@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BLOOM — цветочная мастерская. Букеты с настроением, доставка и цветочные подписки.">
+<title>BLOOM — цветочная мастерская</title>
+<style>
+:root{--ink:#24342b;--green:#315b43;--sage:#dfe9dc;--cream:#faf8f1;--pink:#e9b9b0;--muted:#6c786e;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:rgba(250,248,241,.94);position:sticky;top:0;z-index:5;border-bottom:1px solid #e9e8df}
+.logo{font-family:Georgia,serif;font-size:30px;letter-spacing:5px;font-weight:bold;color:var(--green)}nav{display:flex;gap:30px;font-size:13px;letter-spacing:1px;text-transform:uppercase}nav a:hover{color:#a66b63}.navbtn,.btn{border:0;background:var(--green);color:white;padding:14px 22px;border-radius:3px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;transition:.2s}.navbtn:hover,.btn:hover{background:#203e2d;transform:translateY(-2px)}
+.hero{min-height:590px;display:grid;grid-template-columns:1fr 1fr;background:var(--sage);overflow:hidden}.hero-copy{padding:100px 9% 80px 14%;display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#6c806d}.hero h1{font:normal clamp(48px,6vw,78px)/.98 Georgia,serif;margin:24px 0}.hero p{max-width:420px;color:#59685d;line-height:1.8;font-size:16px;margin:0 0 30px}.hero-art{min-height:590px;position:relative;background:linear-gradient(145deg,#d5e0d0,#f1d8ce);display:flex;align-items:center;justify-content:center}.flower{font-size:clamp(180px,25vw,330px);filter:drop-shadow(15px 20px 14px #647c5d55);transform:rotate(-9deg)}.art-note{position:absolute;right:9%;bottom:9%;background:#faf8f1;padding:16px 20px;font:italic 17px Georgia,serif;transform:rotate(-4deg)}
+.section{padding:90px 8%}.section-head{text-align:center;max-width:650px;margin:0 auto 45px}.section-head h2{font:normal clamp(36px,4vw,52px) Georgia,serif;margin:14px 0}.section-head p{color:var(--muted);line-height:1.7}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white}.card-art{height:250px;display:flex;align-items:center;justify-content:center;font-size:100px}.card:nth-child(1) .card-art{background:#f0d9d4}.card:nth-child(2) .card-art{background:#dce7d8}.card:nth-child(3) .card-art{background:#eee4c9}.card-info{padding:22px}.card-info h3{font:normal 25px Georgia,serif;margin:0 0 8px}.card-info p{color:var(--muted);font-size:14px;line-height:1.6;min-height:44px}.price{font-weight:bold;color:var(--green)}
+.about{background:#e9eee5;display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.about-art{min-height:370px;background:linear-gradient(135deg,#c7d7c2,#f0d7ce);display:flex;align-items:center;justify-content:center;font-size:170px}.about h2{font:normal 48px Georgia,serif;margin:15px 0}.about p{line-height:1.85;color:#5d6b60}.features{display:flex;gap:25px;margin-top:28px;flex-wrap:wrap}.feature strong{display:block;font:26px Georgia,serif;color:var(--green)}.feature span{font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.order{background:var(--green);color:white;text-align:center;padding:80px 8%}.order h2{font:normal 46px Georgia,serif;margin:12px 0}.order p{color:#dce7dc;line-height:1.7}.order .btn{background:var(--pink);color:var(--ink);margin-top:15px}
+footer{padding:28px 8%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+@media(max-width:760px){header{padding:0 5%;height:66px}nav{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:75px 8% 55px}.hero-art{min-height:330px}.cards{grid-template-columns:1fr}.card-art{height:220px}.section{padding:65px 7%}.about{grid-template-columns:1fr}.about-art{min-height:260px;font-size:120px}.about h2{font-size:40px}.order h2{font-size:38px}}
+</style>
+</head>
+<body>
+<header><a class="logo" href="#">BLOOM</a><nav><a href="#catalog">Букеты</a><a href="#about">О мастерской</a><a href="#delivery">Доставка</a></nav><a class="navbtn" href="#delivery">Заказать букет</a></header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><span class="eyebrow">Цветочная мастерская · с любовью к деталям</span><h1>Цветы,<br>которые<br><em>говорят</em></h1><p>Собираем букеты, которые передают чувства без лишних слов. Свежие цветы, необычные сочетания и внимание к каждому поводу.</p><a class="btn" href="#catalog">Выбрать букет</a></div>
+ <div class="hero-art"><div class="flower">💐</div><div class="art-note">каждый день — повод для цветов</div></div>
+</section>
+<section class="section" id="catalog"><div class="section-head"><span class="eyebrow">Наша коллекция</span><h2>Букеты с характером</h2><p>От нежных композиций до ярких акцентов — выбери настроение, а мы позаботимся об остальном.</p></div>
+<div class="cards">
+ <article class="card"><div class="card-art">🌷</div><div class="card-info"><h3>Нежное утро</h3><p>Пастельные оттенки, лёгкость и весеннее настроение.</p><span class="price">от 2 900 ₽</span></div></article>
+ <article class="card"><div class="card-art">🌻</div><div class="card-info"><h3>Солнечный день</h3><p>Тёплые оттенки для ярких событий и больших улыбок.</p><span class="price">от 3 500 ₽</span></div></article>
+ <article class="card"><div class="card-art">🌹</div><div class="card-info"><h3>Особенный момент</h3><p>Выразительная классика, когда хочется сказать главное.</p><span class="price">от 4 200 ₽</span></div></article>
+</div></section>
+<section class="section about" id="about"><div class="about-art">🌸</div><div><span class="eyebrow">Немного о нас</span><h2>Красота —<br>в естественности</h2><p>BLOOM — небольшая цветочная мастерская, где не бывает одинаковых букетов. Мы выбираем сезонные цветы, собираем композиции вручную и бережно упаковываем каждый заказ.</p><div class="features"><div class="feature"><strong>100%</strong><span>свежие цветы</span></div><div class="feature"><strong>1–2 ч</strong><span>сборка заказа</span></div><div class="feature"><strong>7 дней</strong><span>забота о букете</span></div></div></div></section>
+<section class="order" id="delivery"><span class="eyebrow" style="color:#d9e4d8">Подарить настроение просто</span><h2>Пусть сегодня<br>будет цветочным</h2><p>Расскажи, для кого букет и какое настроение хочется передать.<br>Мы поможем подобрать идеальную композицию.</p><a class="btn" href="mailto:hello@bloom.example?subject=Заказ%20букета">Оставить заявку</a></section>
+</main>
+<footer><a class="logo" href="#">BLOOM</a><span>Цветочная мастерская · Учебный демонстрационный сайт</span><span>© 2026 BLOOM</span></footer>
+</body></html>
